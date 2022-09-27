@@ -6,9 +6,16 @@
 
 ```
     $ git clone
-    $ cd nuxt3-tailwind-Firebase
+    $ cd nuxt3-tailwind-firebase
     $ firebase projects:create
+    # 作成したプロジェクトのコンソールに移動する
     # 作成したpjからマイアプリを作成し、configをenvに記録
+    # プロジェクトの課金設定
+    # .firebaseのプロジェクト名を変更する
+    $ cd functions 
+    $ npm install 
+    $ npm run build
+
     $ firebse deploy
 
     vercel にてアプリを作成し、リポジトリと連携する
