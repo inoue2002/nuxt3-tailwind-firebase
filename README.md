@@ -26,10 +26,14 @@
 ```
     Vercel CLIをインストール
     $ npm install vercel -git
-    $ npm vercel 
+    $ vercel 
+    Root Directory  /
+    Output Directory .vercel/output
 
     // envファイルをアップロードする
     $ vercel env add
+
+    # もしくは管理画面から環境変数を設定する
 ```
 
 # Nuxt 3 Minimal Starter
