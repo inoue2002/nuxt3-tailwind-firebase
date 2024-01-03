@@ -1,7 +1,5 @@
-import { defineNuxtPlugin } from '#app';
-
 import { addDoc, collection, getDocs, getFirestore } from 'firebase/firestore';
-import { Task } from '~~/@types/task';
+import type { Task } from '~~/@types/task';
 
 export default defineNuxtPlugin(() => ({
   provide: {

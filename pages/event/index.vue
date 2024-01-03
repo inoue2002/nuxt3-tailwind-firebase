@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import { Ref } from 'vue';
-import { Task } from '~~/@types/task';
+import type { Task } from '~~/@types/task';
 
 const tasks: Ref<Task[]> = ref([]);
 

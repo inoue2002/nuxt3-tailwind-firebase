@@ -15,6 +15,9 @@ export default defineNuxtConfig({
   css: ['@/assets/css/tailwind.css'],
   // 参考:https://std9.jp/articles/01fq14pxsp4r6nbyzp2txj46ac
   postcss: {
-    plugins: { tailwindcss: {} },
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
   },
 });
