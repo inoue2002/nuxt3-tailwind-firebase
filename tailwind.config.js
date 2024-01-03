@@ -10,10 +10,15 @@ module.exports = {
   theme: {
     extend: {},
   },
-  // 参考:https://zenn.dev/ilove/articles/8a93705d396e05
-  // eslint-disable-next-line
+    // 参考:https://zenn.dev/ilove/articles/8a93705d396e05
+    postcss: {
+      plugins: {
+        tailwindcss: {},
+        autoprefixer: {},
+      },
+    },
+  // 参考:https://zenn.dev/ilove/articles/8a93705d396e05   
   plugins: [
-    require("@tailwindcss/line-clamp"),
     function ({ addComponents }) {
       addComponents({
         ".container": {

@@ -1,10 +1,11 @@
 <script setup lang="ts">
-import { Ref } from 'vue';
-import { Task } from '~~/@types/task';
+import type { Task } from '~~/@types/task';
 
 const tasks: Ref<Task[]> = ref([]);
 
 const name = ref('');
+
+const { x, y } = useMouse();
 
 onMounted(async () => {
   // ユーザーがログインしていない場合はログインページへ遷移
@@ -49,6 +50,7 @@ const addTask = async () => {
 
         <li v-for="task of tasks" :key="task.id">{{ task.name }}</li>
       </div>
+      <div>pos: {{ x }}, {{ y }}</div>
     </div>
     <NuxtWelcome />
   </div>
