@@ -5,6 +5,8 @@ const tasks: Ref<Task[]> = ref([]);
 
 const name = ref('');
 
+const { x, y } = useMouse();
+
 onMounted(async () => {
   // ユーザーがログインしていない場合はログインページへ遷移
   await useNuxtApp().$existCurrentUser();
@@ -48,6 +50,7 @@ const addTask = async () => {
 
         <li v-for="task of tasks" :key="task.id">{{ task.name }}</li>
       </div>
+      <div>pos: {{ x }}, {{ y }}</div>
     </div>
     <NuxtWelcome />
   </div>
