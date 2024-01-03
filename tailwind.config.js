@@ -13,7 +13,6 @@ module.exports = {
   // 参考:https://zenn.dev/ilove/articles/8a93705d396e05
   // eslint-disable-next-line
   plugins: [
-    require("@tailwindcss/line-clamp"),
     function ({ addComponents }) {
       addComponents({
         ".container": {
